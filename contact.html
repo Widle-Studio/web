@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - AutoTech Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">Auto<span>Tech</span> Agency</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="automation-use-cases.html">Use Cases</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn">Book a Consultation</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 4rem 0;">
+      <div class="container animate-up">
+        <h1>Book a Free Consultation</h1>
+        <p>Tell us about your operational bottlenecks and we'll discuss how our solutions can help.</p>
+      </div>
+    </section>
+
+    <section id="contact-form" style="background-color: var(--surface-color);">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Get in Touch</h2>
+        <form action="#" method="POST" style="background-color: var(--background-color); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" required placeholder="Acme Corp">
+            </div>
+            <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@acme.com">
+            </div>
+
+            <div class="form-group">
+                <label for="project-type">Primary Project Type</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="internal-tools">Internal Tools (Retool, AppSmith)</option>
+                    <option value="automation">Workflow Automation (n8n, Make, Zapier)</option>
+                    <option value="ai">AI Solutions & Integration</option>
+                    <option value="dashboards">Data Dashboards (Looker Studio)</option>
+                    <option value="other">Other / Not Sure</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="under-10k">Under $10k</option>
+                    <option value="10k-25k">$10k - $25k</option>
+                    <option value="25k-50k">$25k - $50k</option>
+                    <option value="50k-plus">$50k+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Briefly describe what you're trying to build or automate..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem; margin-top: 1rem;">Submit & Book Calendar Call</button>
+            <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">Upon submission, you will be redirected to our Calendly to pick a time.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 AutoTech Agency. All rights reserved.</p>
+      <div style="margin-top: 1rem;">
+        <a href="#" style="margin: 0 0.5rem;">LinkedIn</a>
+        <a href="#" style="margin: 0 0.5rem;">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
