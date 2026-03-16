@@ -1,53 +1,70 @@
 export const caseStudies = [
   {
-    id: "retool-internal-crm",
-    slug: "retool-internal-crm",
-    title: "Custom CRM for Logistics Firm",
-    description: "Built a fully tailored Retool CRM that eliminated manual spreadsheet tracking and unified 3 separate databases.",
-    tags: ["Internal Tools", "Retool", "PostgreSQL"],
-    image: "/mockups/crm-case-study.png",
+    id: "widle-parking-management",
+    slug: "widle-parking-management",
+    title: "Transforming Denmark's Parking Landscape",
+    description: "A case study on Widle Studio LLP's innovative parking management platform utilizing Google Cloud and VertexAI.",
+    tags: ["AI Solutions", "Google Cloud", "VertexAI"],
+    image: "/mockups/widle-parking.png",
     metrics: [
-      { label: "Hours Saved/Wk", value: "40+" },
-      { label: "Data Accuracy", value: "100%" }
+      { label: "Platform Scalability", value: "High" },
+      { label: "Tech Stack", value: "Google Cloud" }
     ],
     content: {
-      problem: "The client was managing a fleet of 200 trucks using 5 different Google Sheets, leading to massive data entry errors and a 24-hour delay in dispatch reporting.",
-      solution: "We engineered a secure, role-based Retool application. It connects directly to their GPS provider's API and their internal PostgreSQL database.",
-      results: "Dispatchers now have a real-time map and drag-and-drop assignment board. The company saves an estimated 40 hours per week in manual data entry."
+      problem: "A leading parking company in Denmark faced limited parking spaces, traffic congestion due to inefficient parking management, and needed seamless user experiences.",
+      solution: "Widle Studio LLP integrated the company's data infrastructure with Google Cloud and VertexAI to create a comprehensive, robust, and scalable parking management platform.",
+      results: "The cloud-based architecture ensured data security, effortless expansion, and set new benchmarks in parking management for a smarter, connected urban future."
     }
   },
   {
-    id: "n8n-automation-system",
-    slug: "n8n-automation-system",
-    title: "Automated Invoice Processing",
-    description: "Deployed an n8n workflow that automatically extracts data from PDF invoices using AI and syncs to Xero.",
-    tags: ["Automation", "n8n", "OpenAI"],
-    image: "/mockups/invoice-automation.png",
+    id: "widle-openai-angular",
+    slug: "widle-openai-angular",
+    title: "Intelligent Angular Web Apps",
+    description: "A case study of integrating OpenAI API to build a custom web app that generates creative text.",
+    tags: ["AI Solutions", "Angular", "OpenAI"],
+    image: "/mockups/widle-angular.png",
     metrics: [
-      { label: "Processing Time", value: "-90%" },
-      { label: "Invoices/Mo", value: "5,000+" }
+      { label: "AI Integration", value: "GPT-3" },
+      { label: "Frontend", value: "Angular" }
     ],
     content: {
-      problem: "An accounting firm was manually retyping data from over 5,000 PDF invoices a month into their accounting software.",
-      solution: "We built an n8n pipeline that triggers on new emails, sends attachments to OpenAI for structured JSON extraction, and pushes the data to Xero via API.",
-      results: "Invoice processing time dropped from 3 minutes per invoice to 15 seconds. Human error was virtually eliminated, and the team was reallocated to higher-value advisory work."
+      problem: "The client needed a web application that allows users to interact with advanced AI models to generate creative and contextually relevant text.",
+      solution: "Widle Studio integrated the OpenAI API (GPT-3) into a custom Angular web application, ensuring seamless authentication and endpoint connectivity.",
+      results: "The resulting application provided an intuitive interface for users to generate high-quality text, demonstrating the power of combining modern frontend frameworks with cutting-edge AI."
     }
   },
   {
-    id: "looker-studio-dashboards",
-    slug: "looker-studio-dashboards",
-    title: "Executive Revenue Dashboards",
-    description: "Consolidated data from Stripe, Hubspot, and Google Ads into a single real-time Looker Studio report.",
-    tags: ["Data Dashboards", "Looker Studio", "BigQuery"],
-    image: "/mockups/revenue-dashboard.png",
+    id: "sandwichesuk",
+    slug: "sandwichesuk",
+    title: "Sandwichesuk - Corporate Lunch Service",
+    description: "Web Development for a corporate lunch delivery service making office catering easier.",
+    tags: ["Web Development", "E-Commerce"],
+    image: "/mockups/sandwichesuk.png",
     metrics: [
-      { label: "Data Sources", value: "6" },
-      { label: "Reporting Speed", value: "Real-time" }
+      { label: "Service Type", value: "Catering" },
+      { label: "Platform", value: "Web App" }
     ],
     content: {
-      problem: "The executive team was waiting until the 10th of every month to get a clear picture of marketing ROI and SaaS churn.",
-      solution: "We set up Fivetran to pipe all raw data into BigQuery, wrote custom SQL models to calculate ARR and LTV, and visualized it all in Looker Studio.",
-      results: "The CEO now has a real-time dashboard on their phone. Marketing can adjust spend daily based on actual closed-won revenue, not just lead volume."
+      problem: "The client needed a streamlined, user-friendly platform for corporate clients to order office lunches and catering services efficiently.",
+      solution: "Widle Studio developed a custom web application tailored to the specific needs of corporate food delivery, featuring intuitive menus, order management, and corporate accounts.",
+      results: "The new platform simplified the ordering process, leading to increased order volume and improved customer satisfaction for corporate clients."
+    }
+  },
+  {
+    id: "askwedding",
+    slug: "askwedding",
+    title: "ASKWedding - Wedding E-Commerce",
+    description: "E-Commerce Development for a comprehensive wedding planning and supplies platform.",
+    tags: ["Web Development", "E-Commerce"],
+    image: "/mockups/askwedding.png",
+    metrics: [
+      { label: "Industry", value: "Wedding" },
+      { label: "Platform", value: "E-Commerce" }
+    ],
+    content: {
+      problem: "The wedding industry requires platforms that handle complex, multi-vendor product offerings with high visual fidelity and smooth user experiences.",
+      solution: "Widle Studio architected and built a robust e-commerce solution tailored for wedding products and services, focusing on performance and user journey.",
+      results: "The platform provides a seamless shopping experience for couples planning their weddings, effectively managing a large catalog of specialized products."
     }
   }
 ];
