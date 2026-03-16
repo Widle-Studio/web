@@ -1,0 +1,84 @@
+import { services } from "@/lib/data/services";
+import Link from "next/link";
+import { ArrowRight, Cpu, GitMerge, LineChart, Layout } from "lucide-react";
+
+export default function ServicesGrid() {
+  const iconMap: Record<string, React.ElementType> = {
+    InternalTools: Layout,
+    Automation: GitMerge,
+    AI: Cpu,
+    Dashboards: LineChart,
+  };
+
+  return (
+    <section className="py-24 bg-[#13161D] border-y border-white/[0.06]">
+      <div className="container mx-auto px-4 max-w-[1200px]">
+        <div className="text-center mb-16">
+          <span className="text-[#22D3EE] font-semibold tracking-wider text-xs uppercase mb-4 block">
+            What We Do
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+            End-to-end Solutions
+          </h2>
+          <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto">
+            From scoping and architecture to deployment and maintenance. We build
+            the systems that power your business.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {services.map((service, index) => {
+            // Pick an icon based on service title logic, or fallback
+            const IconComponent =
+              iconMap[service.id] || Layout;
+
+            return (
+              <div
+                key={service.id}
+                className="group relative p-8 rounded-2xl bg-[#0D0F14] border border-white/5 hover:border-white/10 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.15)] flex flex-col h-full"
+              >
+                <div className="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center mb-8 group-hover:bg-[#6366F1]/10 transition-colors border border-white/10">
+                  <IconComponent className="w-7 h-7 text-[#6366F1] group-hover:text-[#22D3EE] transition-colors" />
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {service.title}
+                </h3>
+
+                <p className="text-[#9CA3AF] leading-relaxed mb-8 flex-1">
+                  {service.description}
+                </p>
+
+                <div className="space-y-6">
+                  <div className="flex flex-wrap gap-2">
+                    {service.tools.slice(0, 4).map((tool, i) => (
+                      <span
+                        key={i}
+                        className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                    {service.tools.length > 4 && (
+                      <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/5 text-white/50 border border-white/10">
+                        +{service.tools.length - 4} more
+                      </span>
+                    )}
+                  </div>
+
+                  <Link
+                    href={`/services#${service.id}`}
+                    className="inline-flex items-center gap-2 text-white font-medium group-hover:text-[#22D3EE] transition-colors"
+                  >
+                    Learn more
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
