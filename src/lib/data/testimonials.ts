@@ -7,7 +7,7 @@ export const testimonials = [
       company: "TechFlow Inc.",
       avatar: "/avatars/sarah.jpg"
     },
-    quote: "AutoTech Agency completely transformed our operations. The Retool CRM they built saves our sales team hours every single day. Their understanding of our business needs was phenomenal."
+    quote: "Widle Studio completely transformed our operations. The Retool CRM they built saves our sales team hours every single day. Their understanding of our business needs was phenomenal."
   },
   {
     id: "2",
