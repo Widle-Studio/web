@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Our Services | AutoTech Agency",
+  title: "Our Services | Widle Studio",
   description: "End-to-end automation, internal tools, AI solutions, and data dashboards.",
 };
 

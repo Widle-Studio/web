@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Wrench } from "lucide-react";
 
 export const metadata = {
-  title: "Tools & Integrations | AutoTech Agency",
+  title: "Tools & Integrations | Widle Studio",
   description: "Explore the modern stack we use to build internal tools and automate workflows.",
 };
 

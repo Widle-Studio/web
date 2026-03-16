@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   if (!study) return { title: "Case Study Not Found" };
 
   return {
-    title: `${study.title} | AutoTech Agency Case Study`,
+    title: `${study.title} | Widle Studio Case Study`,
     description: study.description,
   };
 }

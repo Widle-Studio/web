@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, Lightbulb, Workflow, Users, Wrench } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | AutoTech Agency",
+  title: "About Us | Widle Studio",
   description: "We are an agency focused on building the future of internal tools, automation, and AI for modern teams.",
 };
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
             We build the systems that build your business.
           </h1>
           <p className="text-xl text-[#9CA3AF] max-w-2xl mx-auto leading-relaxed mb-10">
-            AutoTech Agency was founded on a simple premise: teams spend too much
+            Widle Studio was founded on a simple premise: teams spend too much
             time managing software and not enough time doing meaningful work. We
             exist to automate the mundane and empower your operations.
           </p>

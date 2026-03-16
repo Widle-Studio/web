@@ -9,7 +9,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "AutoTech Agency | Internal Tools & Automation",
+  title: "Widle Studio | Internal Tools & Automation",
   description: "We design and build internal tools, automations, and AI workflows for startups and scale-ups — using Retool, n8n, Make.com, Zapier, Looker Studio, and more.",
 };
 
@@ -61,7 +61,7 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "AutoTech Agency",
+              "name": "Widle Studio",
               "image": "https://your-agency-domain.com/logo.png",
               "description": "We design and build internal tools, automations, and AI workflows for startups and scale-ups — using Retool, n8n, Make.com, Zapier, Looker Studio, and more.",
               "address": {

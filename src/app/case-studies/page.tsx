@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Case Studies | AutoTech Agency",
+  title: "Case Studies | Widle Studio",
   description: "Real-world examples of how we've helped companies automate and scale.",
 };
 
