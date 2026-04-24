@@ -9,11 +9,13 @@ const navigation = {
     { name: "Data Dashboards", href: "/services#data-dashboards" },
   ],
   tools: [
-    { name: "Retool", href: "/tools#retool" },
-    { name: "n8n", href: "/tools#n8n" },
-    { name: "Zapier", href: "/tools#zapier" },
-    { name: "Looker Studio", href: "/tools#looker-studio" },
-    { name: "OpenAI", href: "/tools#openai" },
+    { name: "Retool", href: "/tools/retool" },
+    { name: "n8n", href: "/tools/n8n" },
+    { name: "Make.com", href: "/tools/make" },
+    { name: "Zapier", href: "/tools/zapier" },
+    { name: "Looker Studio", href: "/tools/looker-studio" },
+    { name: "OpenAI", href: "/tools/openai" },
+    { name: "Anthropic", href: "/tools/anthropic" },
   ],
   company: [
     { name: "About Us", href: "/about" },
