@@ -3,10 +3,10 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 
 const navigation = {
   services: [
-    { name: "Internal Tools", href: "/services#internal-tools" },
-    { name: "Workflow Automation", href: "/services#automation" },
-    { name: "AI Solutions", href: "/services#ai-solutions" },
-    { name: "Data Dashboards", href: "/services#data-dashboards" },
+    { name: "Internal Tools", href: "/services/internal-tools" },
+    { name: "Workflow Automation", href: "/services/automation" },
+    { name: "AI Solutions", href: "/services/ai-solutions" },
+    { name: "Data Dashboards", href: "/services/data-dashboards" },
   ],
   tools: [
     { name: "Retool", href: "/tools/retool" },
