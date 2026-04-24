@@ -32,42 +32,44 @@ export default function ToolsPage() {
         <div className="container mx-auto px-4 max-w-[1200px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tools.map((tool) => (
-              <div
-                key={tool.id}
-                className="group p-8 rounded-2xl bg-[#13161D] border border-white/5 hover:border-[#6366F1]/50 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.1)] flex flex-col h-full"
-              >
-                <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-[#6366F1]/10 transition-colors border border-white/10 overflow-hidden relative p-3">
-                  <div className="w-full h-full rounded-md bg-gradient-to-br from-white/20 to-transparent group-hover:from-[#6366F1] group-hover:to-[#22D3EE] transition-all flex items-center justify-center">
-                    <Wrench className="w-6 h-6 text-white group-hover:text-white" />
+              <Link href={`/tools/${tool.id}`} key={tool.id} className="block h-full cursor-pointer">
+                <div
+                  className="group p-8 rounded-2xl bg-[#13161D] border border-white/5 hover:border-[#6366F1]/50 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.1)] flex flex-col h-full"
+                >
+                  <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-[#6366F1]/10 transition-colors border border-white/10 overflow-hidden relative p-3">
+                    <div className="w-full h-full rounded-md bg-gradient-to-br from-white/20 to-transparent group-hover:from-[#6366F1] group-hover:to-[#22D3EE] transition-all flex items-center justify-center">
+                      <Wrench className="w-6 h-6 text-white group-hover:text-white" />
+                    </div>
                   </div>
-                </div>
 
-                <div className="mb-4 flex items-center justify-between">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-[#22D3EE] transition-colors">
-                    {tool.name}
-                  </h3>
-                </div>
+                  <div className="mb-4 flex items-center justify-between">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-[#22D3EE] transition-colors flex items-center gap-2">
+                      {tool.name}
+                      <ArrowRight className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                    </h3>
+                  </div>
 
-                <p className="text-[#9CA3AF] leading-relaxed mb-8 flex-1">
-                  {tool.description}
-                </p>
-
-                <div className="mt-auto">
-                  <p className="text-sm text-white/60 mb-3 uppercase tracking-wider font-medium">
-                    Best for
+                  <p className="text-[#9CA3AF] leading-relaxed mb-8 flex-1">
+                    {tool.description}
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {tool.useCases.map((useCase, i) => (
-                      <span
-                        key={i}
-                        className="px-2.5 py-1 bg-white/5 text-white/80 text-xs font-semibold rounded-md border border-white/10"
-                      >
-                        {useCase}
-                      </span>
-                    ))}
+
+                  <div className="mt-auto">
+                    <p className="text-sm text-white/60 mb-3 uppercase tracking-wider font-medium">
+                      Best for
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {tool.useCases.map((useCase, i) => (
+                        <span
+                          key={i}
+                          className="px-2.5 py-1 bg-white/5 text-white/80 text-xs font-semibold rounded-md border border-white/10"
+                        >
+                          {useCase}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
