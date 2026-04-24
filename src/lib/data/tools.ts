@@ -40,5 +40,12 @@ export const tools = [
     logo: "OpenAI",
     description: "Integrate powerful language models to summarize text, extract data, or build conversational agents.",
     useCases: ["Customer Support AI", "Document Analysis", "Content Generation"]
+  },
+  {
+    id: "anthropic",
+    name: "Anthropic",
+    logo: "Anthropic",
+    description: "Build robust AI applications with Claude, a next-generation AI assistant based on Anthropic's research.",
+    useCases: ["Advanced Reasoning", "Coding Assistance", "Data Analysis"]
   }
 ];
