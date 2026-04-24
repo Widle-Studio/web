@@ -67,7 +67,7 @@ export default function ServicesGrid() {
                   </div>
 
                   <Link
-                    href={`/services#${service.id}`}
+                    href={`/services/${service.id}`}
                     className="inline-flex items-center gap-2 text-white font-medium group-hover:text-[#22D3EE] transition-colors"
                   >
                     Learn more
