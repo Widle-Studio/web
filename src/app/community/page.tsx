@@ -66,10 +66,8 @@ export default function CommunityPage() {
             {contributions.map((item) => {
               const Icon = IconMap[item.icon] || BarChartBig;
               return (
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/community/${item.id}`}
                   key={item.id}
                   className="group p-8 rounded-2xl bg-[#13161D] border border-white/5 hover:border-[#6366F1]/50 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.1)] flex flex-col h-full"
                 >
@@ -102,10 +100,10 @@ export default function CommunityPage() {
                     </div>
 
                     <div className="flex items-center text-[#6366F1] text-sm font-semibold group-hover:text-[#8B5CF6] transition-colors">
-                        View PR on GitHub <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        View Details <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
-                </a>
+                </Link>
               );
             })}
           </div>
