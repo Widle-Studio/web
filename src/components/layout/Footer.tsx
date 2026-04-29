@@ -3,21 +3,25 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 
 const navigation = {
   services: [
-    { name: "Internal Tools", href: "/services#internal-tools" },
-    { name: "Workflow Automation", href: "/services#automation" },
-    { name: "AI Solutions", href: "/services#ai-solutions" },
-    { name: "Data Dashboards", href: "/services#data-dashboards" },
+    { name: "Internal Tools", href: "/services/internal-tools" },
+    { name: "Workflow Automation", href: "/services/automation" },
+    { name: "AI Solutions", href: "/services/ai-solutions" },
+    { name: "Data Dashboards", href: "/services/data-dashboards" },
   ],
   tools: [
-    { name: "Retool", href: "/tools#retool" },
-    { name: "n8n", href: "/tools#n8n" },
-    { name: "Zapier", href: "/tools#zapier" },
-    { name: "Looker Studio", href: "/tools#looker-studio" },
-    { name: "OpenAI", href: "/tools#openai" },
+    { name: "Retool", href: "/tools/retool" },
+    { name: "n8n", href: "/tools/n8n" },
+    { name: "Make.com", href: "/tools/make" },
+    { name: "Zapier", href: "/tools/zapier" },
+    { name: "Looker Studio", href: "/tools/looker-studio" },
+    { name: "OpenAI", href: "/tools/openai" },
+    { name: "Anthropic", href: "/tools/anthropic" },
   ],
   company: [
     { name: "About Us", href: "/about" },
     { name: "Case Studies", href: "/case-studies" },
+    { name: "Community", href: "/community" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
   social: [
