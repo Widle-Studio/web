@@ -86,13 +86,21 @@ export default function ServicesPage() {
                     </div>
                   </div>
 
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 text-white font-medium bg-[#6366F1] px-6 py-3 rounded-lg hover:bg-[#8B5CF6] transition-colors w-fit"
-                  >
-                    Discuss your project
-                    <ChevronRight size={18} />
-                  </Link>
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <Link
+                      href={`/services/${service.id}`}
+                      className="inline-flex items-center gap-2 text-white font-medium bg-[#6366F1] px-6 py-3 rounded-lg hover:bg-[#8B5CF6] transition-colors w-fit"
+                    >
+                      Learn more
+                      <ChevronRight size={18} />
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center gap-2 text-[#9CA3AF] font-medium border border-white/10 bg-white/5 px-6 py-3 rounded-lg hover:bg-white/10 hover:text-white transition-colors w-fit"
+                    >
+                      Discuss your project
+                    </Link>
+                  </div>
                 </div>
 
                 {/* Mockup / Image */}
