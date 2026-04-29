@@ -21,6 +21,7 @@ const navigation = {
     { name: "About Us", href: "/about" },
     { name: "Case Studies", href: "/case-studies" },
     { name: "Community", href: "/community" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
   social: [
