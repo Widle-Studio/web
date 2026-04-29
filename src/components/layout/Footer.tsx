@@ -56,7 +56,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded bg-primary text-white flex items-center justify-center font-bold text-lg leading-none">
                 A
               </div>
-              <span className="text-2xl font-bold text-white tracking-tight">AutoTech</span>
+              <span className="text-2xl font-bold text-white tracking-tight">Widle</span>
             </Link>
             <p className="text-sm leading-6 text-muted-foreground max-w-xs">
               We design and build internal tools, automations, and AI workflows for startups and scale-ups.
