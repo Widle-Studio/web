@@ -24,23 +24,23 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
   if (!study) notFound();
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0D0F14] pt-24 pb-32">
+    <div className="flex flex-col min-h-screen bg-background pt-24 pb-32">
       {/* Hero */}
-      <section className="py-20 md:py-32 relative overflow-hidden border-b border-white/[0.06] bg-[#13161D]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+      <section className="py-20 md:py-32 relative overflow-hidden border-b border-white/[0.06] bg-card">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-primary/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] relative z-10 text-center">
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 text-[#9CA3AF] hover:text-white transition-colors text-sm font-medium mb-12 uppercase tracking-wider"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm font-medium mb-12 uppercase tracking-wider"
           >
             <ArrowLeft size={16} />
             Back to Case Studies
           </Link>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight mb-8">
             {study.title}
           </h1>
-          <p className="text-xl text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {study.description}
           </p>
         </div>
@@ -53,20 +53,20 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
             {/* Sidebar Data */}
             <div className="lg:w-1/3 order-2 lg:order-1">
-              <div className="sticky top-32 space-y-12 bg-[#13161D] p-8 rounded-2xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+              <div className="sticky top-32 space-y-12 bg-card p-8 rounded-2xl border border-border shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
 
                 {/* Metrics */}
                 <div>
-                  <h3 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">
+                  <h3 className="text-foreground font-medium mb-6 uppercase tracking-wider text-sm">
                     Key Results
                   </h3>
                   <div className="space-y-6">
                     {study.metrics.map((metric, i) => (
                       <div key={i} className="flex flex-col">
-                        <span className="text-3xl font-bold text-[#6366F1] mb-1">
+                        <span className="text-3xl font-bold text-primary mb-1">
                           {metric.value}
                         </span>
-                        <span className="text-[#9CA3AF]">
+                        <span className="text-muted-foreground">
                           {metric.label}
                         </span>
                       </div>
@@ -74,18 +74,18 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                   </div>
                 </div>
 
-                <div className="w-full h-px bg-white/10" />
+                <div className="w-full h-px bg-muted/50" />
 
                 {/* Tags / Tools */}
                 <div>
-                  <h3 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">
+                  <h3 className="text-foreground font-medium mb-6 uppercase tracking-wider text-sm">
                     Technologies Used
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {study.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1.5 bg-white/5 text-white/80 text-sm font-medium rounded-md border border-white/10"
+                        className="px-3 py-1.5 bg-muted text-foreground/80 text-sm font-medium rounded-md border border-border/50"
                       >
                         {tag}
                       </span>
@@ -93,13 +93,13 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                   </div>
                 </div>
 
-                <div className="w-full h-px bg-white/10" />
+                <div className="w-full h-px bg-muted/50" />
 
                 <div className="text-center pt-4">
-                   <p className="text-[#9CA3AF] text-sm mb-4">Want similar results for your team?</p>
+                   <p className="text-muted-foreground text-sm mb-4">Want similar results for your team?</p>
                    <Link
                       href="/contact"
-                      className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-lg bg-white/5 text-white font-medium hover:bg-white/10 border border-white/10 transition-colors"
+                      className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-lg bg-muted text-foreground font-medium hover:bg-muted/50 border border-border/50 transition-colors"
                     >
                       Book a call
                     </Link>
@@ -109,41 +109,41 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             </div>
 
             {/* Narrative Content */}
-            <div className="lg:w-2/3 order-1 lg:order-2 text-[#9CA3AF] prose prose-invert prose-lg max-w-none">
+            <div className="lg:w-2/3 order-1 lg:order-2 text-muted-foreground prose prose-invert prose-lg max-w-none">
 
               <div className="mb-16">
-                <h2 className="text-3xl font-bold text-white mb-6">The Challenge</h2>
-                <div className="p-6 bg-[#6366F1]/5 border-l-4 border-[#6366F1] rounded-r-xl">
-                  <p className="text-white/90 leading-relaxed text-xl mb-0">
+                <h2 className="text-3xl font-bold text-foreground mb-6">The Challenge</h2>
+                <div className="p-6 bg-primary/5 border-l-4 border-primary rounded-r-xl">
+                  <p className="text-foreground/90 leading-relaxed text-xl mb-0">
                     {study.content.problem}
                   </p>
                 </div>
               </div>
 
               <div className="mb-16">
-                <h2 className="text-3xl font-bold text-white mb-6">Our Solution</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-6">Our Solution</h2>
                 <p className="leading-relaxed text-lg mb-8">
                   {study.content.solution}
                 </p>
 
                 {/* Abstract Image Rep */}
-                <div className="w-full aspect-video rounded-xl bg-[#13161D] border border-white/10 mb-8 p-6 flex flex-col items-center justify-center gap-4 relative overflow-hidden">
+                <div className="w-full aspect-video rounded-xl bg-card border border-border/50 mb-8 p-6 flex flex-col items-center justify-center gap-4 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#22D3EE]/5 to-[#6366F1]/5" />
-                  <div className="w-3/4 h-8 bg-white/5 rounded-md relative z-10" />
+                  <div className="w-3/4 h-8 bg-muted rounded-md relative z-10" />
                   <div className="w-full h-full flex gap-4 relative z-10 mt-2">
-                     <div className="w-1/4 h-full bg-white/5 rounded-md" />
-                     <div className="w-3/4 h-full bg-[#0D0F14] border border-white/10 shadow-lg rounded-md p-4 flex flex-col gap-2">
-                        <div className="w-1/3 h-6 bg-white/10 rounded" />
-                        <div className="w-full h-full bg-white/5 rounded mt-2" />
+                     <div className="w-1/4 h-full bg-muted rounded-md" />
+                     <div className="w-3/4 h-full bg-background border border-border/50 shadow-lg rounded-md p-4 flex flex-col gap-2">
+                        <div className="w-1/3 h-6 bg-muted/50 rounded" />
+                        <div className="w-full h-full bg-muted rounded mt-2" />
                      </div>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold text-white mb-6">The Results</h2>
-                <div className="p-6 bg-[#22D3EE]/5 border border-[#22D3EE]/20 rounded-xl">
-                  <p className="text-white/90 leading-relaxed text-lg mb-0">
+                <h2 className="text-3xl font-bold text-foreground mb-6">The Results</h2>
+                <div className="p-6 bg-accent/5 border border-[#22D3EE]/20 rounded-xl">
+                  <p className="text-foreground/90 leading-relaxed text-lg mb-0">
                     {study.content.results}
                   </p>
                 </div>
@@ -155,17 +155,17 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       </section>
 
       {/* CTA Bottom */}
-      <section className="py-24 bg-[#13161D] border-y border-white/[0.06] text-center mt-12">
+      <section className="py-24 bg-card border-y border-white/[0.06] text-center mt-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-3xl font-bold text-foreground mb-6">
             Ready to streamline your operations?
           </h2>
-          <p className="text-[#9CA3AF] mb-8 max-w-xl mx-auto">
+          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Let&apos;s discuss how we can build customized solutions for your business.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[#6366F1] text-white font-medium hover:bg-[#8B5CF6] transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-foreground font-medium hover:bg-primary-foreground transition-colors"
           >
             Book a Free Strategy Call
             <ArrowRight size={18} />

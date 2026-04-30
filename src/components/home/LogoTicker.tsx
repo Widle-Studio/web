@@ -5,9 +5,9 @@ export default function LogoTicker() {
   const allTools = [...tools, ...tools]; // Duplicate for infinite scroll effect
 
   return (
-    <section className="py-20 bg-[#13161D] overflow-hidden border-t border-b border-white/[0.06]">
+    <section className="py-20 bg-card overflow-hidden border-t border-b border-white/[0.06]">
       <div className="container mx-auto px-4 max-w-[1200px] mb-8">
-        <p className="text-center text-xs font-semibold tracking-[0.1em] text-[#9CA3AF] uppercase">
+        <p className="text-center text-xs font-semibold tracking-[0.1em] text-muted-foreground uppercase">
           Tools We Work With
         </p>
       </div>
@@ -23,11 +23,11 @@ export default function LogoTicker() {
               key={`${tool.id}-${index}`}
               className="flex items-center space-x-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 min-w-max cursor-pointer"
             >
-              <div className="w-10 h-10 relative flex items-center justify-center bg-white/5 rounded-md p-2 border border-white/10">
+              <div className="w-10 h-10 relative flex items-center justify-center bg-muted rounded-md p-2 border border-border/50">
                 {/* Fallback avatar block for tool logo representation since we don't have images */}
-                <div className="w-6 h-6 rounded-sm bg-gradient-to-br from-[#6366F1] to-[#22D3EE] opacity-50"></div>
+                <div className="w-6 h-6 rounded-sm bg-gradient-to-br from-primary to-[#22D3EE] opacity-50"></div>
               </div>
-              <span className="text-white/80 font-medium text-lg">
+              <span className="text-foreground/80 font-medium text-lg">
                 {tool.name}
               </span>
             </div>

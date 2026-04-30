@@ -4,12 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { name: "Services", href: "/services" },
   { name: "Use Cases", href: "/use-cases" },
   { name: "Tools", href: "/tools" },
+  { name: "Community", href: "/community" },
   { name: "Case Studies", href: "/case-studies" },
+  { name: "Blog", href: "/blog" },
   { name: "About", href: "/about" },
 ];
 
@@ -30,24 +33,24 @@ export default function Navbar() {
     <header
       className={`fixed top-0 w-full z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#0D0F14]/80 backdrop-blur-md border-b border-white/5"
+          ? "bg-background/80 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded bg-primary text-white flex items-center justify-center font-bold text-lg leading-none shadow-[0_0_15px_rgba(99,102,241,0.5)] group-hover:shadow-[0_0_25px_rgba(99,102,241,0.8)] transition-all">
+            <div className="w-8 h-8 rounded bg-primary text-foreground flex items-center justify-center font-bold text-lg leading-none shadow-[0_0_15px_rgba(99,102,241,0.5)] group-hover:shadow-[0_0_25px_rgba(99,102,241,0.8)] transition-all">
               A
             </div>
-            <span className="text-xl font-bold text-white tracking-tight">AutoTech</span>
+            <span className="text-xl font-bold text-foreground tracking-tight">Widle</span>
           </Link>
         </div>
 
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-muted-foreground hover:text-white transition-colors"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-muted-foreground hover:text-foreground transition-colors"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -60,8 +63,8 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-medium leading-6 transition-colors hover:text-white relative group ${
-                pathname === item.href ? "text-white" : "text-muted-foreground"
+              className={`text-sm font-medium leading-6 transition-colors hover:text-foreground relative group ${
+                pathname === item.href ? "text-foreground" : "text-muted-foreground"
               }`}
             >
               {item.name}
@@ -70,10 +73,11 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center gap-4">
+          <ThemeToggle />
           <Link
             href="/contact"
-            className="rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="rounded-lg bg-gradient-to-r from-primary to-primary-foreground px-5 py-2.5 text-sm font-semibold text-foreground shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             Book a Call
           </Link>
@@ -83,18 +87,18 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden" role="dialog" aria-modal="true">
-          <div className="fixed inset-0 z-50 bg-[#0D0F14]/95 backdrop-blur-sm" />
-          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#13161D] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm" />
+          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-card px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                <div className="w-8 h-8 rounded bg-primary text-white flex items-center justify-center font-bold text-lg leading-none">
+                <div className="w-8 h-8 rounded bg-primary text-foreground flex items-center justify-center font-bold text-lg leading-none">
                   A
                 </div>
-                <span className="text-xl font-bold text-white">AutoTech</span>
+                <span className="text-xl font-bold text-foreground">Widle</span>
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-muted-foreground hover:text-white"
+                className="-m-2.5 rounded-md p-2.5 text-muted-foreground hover:text-foreground"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -108,8 +112,8 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-white/5 transition-colors ${
-                        pathname === item.href ? "text-white bg-white/5" : "text-muted-foreground"
+                      className={`-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-muted transition-colors ${
+                        pathname === item.href ? "text-foreground bg-muted" : "text-muted-foreground"
                       }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
@@ -117,10 +121,11 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </div>
-                <div className="py-6">
+                <div className="py-6 flex flex-col gap-4">
+                  <div className="flex justify-end"><ThemeToggle /></div>
                   <Link
                     href="/contact"
-                    className="-mx-3 block rounded-lg bg-primary px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-primary/90 text-center"
+                    className="-mx-3 block rounded-lg bg-primary px-3 py-2.5 text-base font-semibold leading-7 text-foreground hover:bg-primary/90 text-center"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Book a Call
