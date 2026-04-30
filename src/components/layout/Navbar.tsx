@@ -59,31 +59,76 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex lg:gap-x-8 items-center">
-          {/* Services Dropdown */}
+          {/* Services Mega Menu */}
           <div className="relative group">
-            <button className={`flex items-center gap-1 text-sm font-medium leading-6 transition-colors hover:text-white ${
+            <button className={`flex items-center gap-1 text-sm font-medium leading-6 transition-colors hover:text-white py-2 ${
               pathname.startsWith("/services") ? "text-white" : "text-muted-foreground"
             }`}>
               Services
               <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true" />
             </button>
-            <div className="absolute left-0 top-full pt-4 w-[200px] opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200">
-              <div className="bg-[#13161D] border border-white/10 rounded-xl shadow-2xl p-4 flex flex-col gap-4 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
-                {serviceCategories.map((category) => (
-                  <div key={category.title} className="relative z-10">
-                    <h3 className="text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">{category.title}</h3>
-                    <ul className="space-y-2">
-                      {category.items.map((item) => (
-                        <li key={item.name}>
-                          <Link href={item.href} className="text-sm text-muted-foreground hover:text-white transition-colors block">
-                            {item.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+            <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-[850px] opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div className="bg-[#13161D] border border-white/10 rounded-2xl shadow-2xl overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none"></div>
+
+                <div className="p-8 relative z-10">
+                  <div className="grid grid-cols-3 gap-8">
+                    {serviceCategories.map((category) => (
+                      <div key={category.title} className="flex flex-col">
+                        <h3 className="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2 flex items-center gap-2">
+                          {category.title === "Data Platforms" && (
+                            <span className="w-6 h-6 rounded-md bg-blue-500/10 flex items-center justify-center text-blue-400">
+                              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                              </svg>
+                            </span>
+                          )}
+                          {category.title === "Business Intelligence" && (
+                            <span className="w-6 h-6 rounded-md bg-purple-500/10 flex items-center justify-center text-purple-400">
+                              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                              </svg>
+                            </span>
+                          )}
+                          {category.title === "Internal Development Tools" && (
+                            <span className="w-6 h-6 rounded-md bg-green-500/10 flex items-center justify-center text-green-400">
+                              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                              </svg>
+                            </span>
+                          )}
+                          {category.title}
+                        </h3>
+                        <ul className="space-y-1">
+                          {category.items.map((item) => (
+                            <li key={item.name}>
+                              <Link
+                                href={item.href}
+                                className="group/item flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-white/5 hover:text-white transition-all"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover/item:bg-primary transition-colors"></span>
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+
+                {/* Bottom Banner mirroring the mockup's style */}
+                <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-t border-white/5 p-4 relative z-10 flex items-center justify-between">
+                  <p className="text-sm font-medium text-white/90 pl-4">
+                    Ready to transform your business with our tailored solutions?
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="rounded-lg bg-primary hover:bg-primary/90 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors"
+                  >
+                    Book a Consultation
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
