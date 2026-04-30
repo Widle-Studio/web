@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="w-8 h-8 rounded bg-primary text-white flex items-center justify-center font-bold text-lg leading-none shadow-[0_0_15px_rgba(99,102,241,0.5)] group-hover:shadow-[0_0_25px_rgba(99,102,241,0.8)] transition-all">
               A
             </div>
-            <span className="text-xl font-bold text-white tracking-tight">AutoTech</span>
+            <span className="text-xl font-bold text-white tracking-tight">Widle</span>
           </Link>
         </div>
 
@@ -167,7 +167,7 @@ export default function Navbar() {
                 <div className="w-8 h-8 rounded bg-primary text-white flex items-center justify-center font-bold text-lg leading-none">
                   A
                 </div>
-                <span className="text-xl font-bold text-white">AutoTech</span>
+                <span className="text-xl font-bold text-white">Widle</span>
               </Link>
               <button
                 type="button"
