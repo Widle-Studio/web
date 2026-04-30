@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { serviceCategories } from "@/lib/data/services-menu";
 
 const navLinks = [
-  { name: "Services", href: "/services" },
   { name: "Use Cases", href: "/use-cases" },
   { name: "Tools", href: "/tools" },
   { name: "Community", href: "/community" },
@@ -18,6 +18,7 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -57,7 +58,36 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="hidden lg:flex lg:gap-x-8">
+        <div className="hidden lg:flex lg:gap-x-8 items-center">
+          {/* Services Dropdown */}
+          <div className="relative group">
+            <button className={`flex items-center gap-1 text-sm font-medium leading-6 transition-colors hover:text-white ${
+              pathname.startsWith("/services") ? "text-white" : "text-muted-foreground"
+            }`}>
+              Services
+              <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true" />
+            </button>
+            <div className="absolute left-0 top-full pt-4 w-[200px] opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200">
+              <div className="bg-[#13161D] border border-white/10 rounded-xl shadow-2xl p-4 flex flex-col gap-4 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
+                {serviceCategories.map((category) => (
+                  <div key={category.title} className="relative z-10">
+                    <h3 className="text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">{category.title}</h3>
+                    <ul className="space-y-2">
+                      {category.items.map((item) => (
+                        <li key={item.name}>
+                          <Link href={item.href} className="text-sm text-muted-foreground hover:text-white transition-colors block">
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {navLinks.map((item) => (
             <Link
               key={item.name}
@@ -106,6 +136,40 @@ export default function Navbar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-white/10">
                 <div className="space-y-2 py-6">
+                  <div className="-mx-3">
+                    <button
+                      onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                      className={`flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-medium leading-7 hover:bg-white/5 transition-colors ${
+                        pathname.startsWith("/services") ? "text-white bg-white/5" : "text-muted-foreground"
+                      }`}
+                    >
+                      Services
+                      <ChevronDown
+                        className={`h-5 w-5 flex-none transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
+                        aria-hidden="true"
+                      />
+                    </button>
+                    {mobileServicesOpen && (
+                      <div className="mt-2 space-y-4 px-6 pb-2">
+                        {serviceCategories.map((category) => (
+                          <div key={category.title} className="space-y-2">
+                            <div className="text-sm font-semibold text-white/80 uppercase tracking-wider">{category.title}</div>
+                            {category.items.map((item) => (
+                              <Link
+                                key={item.name}
+                                href={item.href}
+                                className="block rounded-lg py-2 pl-4 pr-3 text-sm font-medium leading-6 text-muted-foreground hover:text-white hover:bg-white/5 transition-colors"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {item.name}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
                   {navLinks.map((item) => (
                     <Link
                       key={item.name}
