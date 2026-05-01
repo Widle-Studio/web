@@ -7,20 +7,20 @@ export default function CaseStudiesPreview() {
   const previewStudies = caseStudies.slice(0, 3);
 
   return (
-    <section className="py-24 bg-[#13161D] border-b border-white/[0.06]">
+    <section className="py-24 bg-card border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div>
             <span className="text-[#22D3EE] font-semibold tracking-wider text-xs uppercase mb-4 block">
               Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
               Real results for real teams
             </h2>
           </div>
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 text-white font-medium bg-white/5 border border-white/10 px-6 py-3 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
+            className="inline-flex items-center gap-2 text-foreground font-medium bg-foreground/5 border border-border px-6 py-3 rounded-lg hover:bg-foreground/10 transition-colors whitespace-nowrap"
           >
             View all work
             <ArrowRight size={18} />
@@ -32,16 +32,16 @@ export default function CaseStudiesPreview() {
             <Link
               href={`/case-studies/${study.slug}`}
               key={study.id}
-              className="group flex flex-col bg-[#0D0F14] border border-white/5 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(34,211,238,0.1)] h-full"
+              className="group flex flex-col bg-background border border-border rounded-2xl overflow-hidden hover:border-border transition-all duration-300 hover:shadow-[0_8px_32px_rgba(34,211,238,0.1)] h-full"
             >
               {/* Thumbnail Placeholder */}
-              <div className="w-full aspect-[4/3] bg-gradient-to-br from-[#13161D] to-[#22D3EE]/10 relative border-b border-white/5 overflow-hidden flex items-center justify-center p-8">
+              <div className="w-full aspect-[4/3] bg-gradient-to-br from-[#13161D] to-[#22D3EE]/10 relative border-b border-border overflow-hidden flex items-center justify-center p-8">
                 {/* Abstract graphic */}
-                <div className="w-full h-full bg-[#13161D] rounded-lg border border-white/10 shadow-2xl relative p-4 group-hover:scale-[1.02] transition-transform duration-500">
-                   <div className="w-1/3 h-4 bg-white/10 rounded-md mb-4" />
+                <div className="w-full h-full bg-card rounded-lg border border-border shadow-2xl relative p-4 group-hover:scale-[1.02] transition-transform duration-500">
+                   <div className="w-1/3 h-4 bg-foreground/10 rounded-md mb-4" />
                    <div className="w-full h-24 bg-[#6366F1]/20 rounded-md mb-2" />
                    <div className="flex gap-2 h-16">
-                     <div className="flex-1 bg-white/5 rounded-md" />
+                     <div className="flex-1 bg-foreground/5 rounded-md" />
                      <div className="w-1/3 bg-[#22D3EE]/20 rounded-md" />
                    </div>
                 </div>
@@ -59,22 +59,22 @@ export default function CaseStudiesPreview() {
                   ))}
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#22D3EE] transition-colors">
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-[#22D3EE] transition-colors">
                   {study.title}
                 </h3>
 
-                <p className="text-[#9CA3AF] leading-relaxed mb-8 flex-1">
+                <p className="text-muted-foreground leading-relaxed mb-8 flex-1">
                   {study.description}
                 </p>
 
                 {/* Metrics */}
-                <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
+                <div className="grid grid-cols-2 gap-4 pt-6 border-t border-border">
                   {study.metrics.slice(0, 2).map((result, i) => (
                     <div key={i}>
-                      <span className="block text-xl font-bold text-white mb-1">
+                      <span className="block text-xl font-bold text-foreground mb-1">
                         {result.value}
                       </span>
-                      <span className="text-sm text-[#9CA3AF]">
+                      <span className="text-sm text-muted-foreground">
                         {result.label}
                       </span>
                     </div>

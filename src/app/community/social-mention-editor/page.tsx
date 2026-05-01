@@ -31,14 +31,14 @@ export default function SocialMentionEditorPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0D0F14] pt-24">
+    <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
-      <section className="py-20 md:py-32 relative overflow-hidden border-b border-white/5">
+      <section className="py-20 md:py-32 relative overflow-hidden border-b border-border">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] relative z-10">
           <Link
             href="/community"
-            className="inline-flex items-center gap-2 text-sm text-[#9CA3AF] hover:text-white transition-colors mb-12"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
             <ArrowLeft size={16} />
             Back to Community
@@ -49,16 +49,16 @@ export default function SocialMentionEditorPage() {
                 {component.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="px-2.5 py-1 bg-white/5 text-white/80 text-xs font-semibold rounded-md border border-white/10"
+                    className="px-2.5 py-1 bg-foreground/5 text-foreground/80 text-xs font-semibold rounded-md border border-border"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight mb-6">
                 {component.title}
               </h1>
-              <p className="text-xl text-[#9CA3AF] max-w-2xl leading-relaxed mb-8">
+              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed mb-8">
                 {component.description}
               </p>
 
@@ -67,7 +67,7 @@ export default function SocialMentionEditorPage() {
                   href={component.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#6366F1] text-white font-medium hover:bg-[#8B5CF6] transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#6366F1] text-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
                 >
                   <Github size={18} />
                   View on GitHub
@@ -84,7 +84,7 @@ export default function SocialMentionEditorPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-16">
 
             {/* Guide / Markdown Body */}
-            <div className="order-2 lg:order-1 prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-[#6366F1] hover:prose-a:text-[#8B5CF6] prose-img:rounded-xl prose-img:border prose-img:border-white/10 prose-hr:border-white/10 prose-blockquote:border-[#6366F1]">
+            <div className="order-2 lg:order-1 prose prose-invert prose-lg max-w-none prose-headings:text-foreground prose-a:text-[#6366F1] hover:prose-a:text-[#8B5CF6] prose-img:rounded-xl prose-img:border prose-img:border-border prose-hr:border-border prose-blockquote:border-[#6366F1]">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {cleanBody(component.githubBody, component.imageUrl)}
               </ReactMarkdown>
@@ -93,8 +93,8 @@ export default function SocialMentionEditorPage() {
             {/* Sidebar / Preview */}
             <div className="order-1 lg:order-2 flex flex-col gap-8">
               {component.imageUrl ? (
-                <div className="sticky top-32 rounded-2xl border border-white/10 overflow-hidden bg-[#13161D] p-2">
-                  <div className="text-sm text-[#9CA3AF] mb-3 px-2 pt-2 font-medium">Component Preview</div>
+                <div className="sticky top-32 rounded-2xl border border-border overflow-hidden bg-card p-2">
+                  <div className="text-sm text-muted-foreground mb-3 px-2 pt-2 font-medium">Component Preview</div>
                   <img
                     src={component.imageUrl}
                     alt={`Preview of ${component.title}`}
@@ -102,12 +102,12 @@ export default function SocialMentionEditorPage() {
                   />
                 </div>
               ) : (
-                <div className="sticky top-32 rounded-2xl border border-white/10 overflow-hidden bg-[#13161D] p-8 text-center flex flex-col items-center justify-center">
-                   <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center mb-4">
-                       <ExternalLink className="w-6 h-6 text-[#9CA3AF]" />
+                <div className="sticky top-32 rounded-2xl border border-border overflow-hidden bg-card p-8 text-center flex flex-col items-center justify-center">
+                   <div className="w-16 h-16 rounded-xl bg-foreground/5 flex items-center justify-center mb-4">
+                       <ExternalLink className="w-6 h-6 text-muted-foreground" />
                    </div>
-                   <h3 className="text-white font-medium mb-2">View Component</h3>
-                   <p className="text-sm text-[#9CA3AF] mb-4">Check out the PR on GitHub to see the full implementation and previews.</p>
+                   <h3 className="text-foreground font-medium mb-2">View Component</h3>
+                   <p className="text-sm text-muted-foreground mb-4">Check out the PR on GitHub to see the full implementation and previews.</p>
                    <a href={component.url} target="_blank" rel="noopener noreferrer" className="text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors">
                      Open GitHub &rarr;
                    </a>

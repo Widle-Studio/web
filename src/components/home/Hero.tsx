@@ -35,7 +35,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-wider text-[#6366F1] uppercase mb-6">
+          <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-border text-xs font-semibold tracking-wider text-[#6366F1] uppercase mb-6">
             Automation · AI · Internal Tools
           </span>
 
@@ -47,7 +47,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white absolute w-full"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground absolute w-full"
               >
                 {textOptions[index]}
               </motion.h1>
@@ -59,7 +59,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-4 md:mt-8 max-w-2xl mx-auto text-lg sm:text-xl text-[#9CA3AF] leading-relaxed"
+          className="mt-4 md:mt-8 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground leading-relaxed"
         >
           We design and build internal tools, automations, and AI workflows for
           startups and scale-ups — using Retool, n8n, Make.com, Zapier, Looker
@@ -74,14 +74,14 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-primary-foreground font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
           >
             Book a Consultation
             <ArrowRight size={18} />
           </Link>
           <Link
             href="/case-studies"
-            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-white/5 text-white font-medium hover:bg-white/10 transition-colors border border-white/10 flex items-center justify-center"
+            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-foreground/5 text-foreground font-medium hover:bg-foreground/10 transition-colors border border-border flex items-center justify-center"
           >
             See Our Work
           </Link>
