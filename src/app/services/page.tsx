@@ -12,7 +12,7 @@ export default function ServicesPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#6366F1] opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight mb-6">
             Everything you need to scale operations.
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                   <div className="flex flex-wrap gap-4 pt-4">
                     <Link
                       href={`/services/${service.id}`}
-                      className="inline-flex items-center gap-2 text-foreground font-medium bg-[#6366F1] px-6 py-3 rounded-lg hover:bg-[#8B5CF6] transition-colors w-fit"
+                      className="inline-flex items-center gap-2 text-primary-foreground font-medium bg-primary px-6 py-3 rounded-lg hover:bg-[#8B5CF6] transition-colors w-fit"
                     >
                       Learn more
                       <ChevronRight size={18} />
@@ -117,7 +117,7 @@ export default function ServicesPage() {
                     <div className="flex gap-4 flex-1">
                       <div className="w-1/4 bg-foreground/5 rounded-md h-full" />
                       <div className="w-3/4 flex flex-col gap-4">
-                        <div className="w-full h-1/3 bg-[#6366F1]/20 rounded-md" />
+                        <div className="w-full h-1/3 bg-primary/20 rounded-md" />
                         <div className="w-full h-2/3 bg-foreground/5 rounded-md" />
                       </div>
                     </div>

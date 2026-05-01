@@ -37,7 +37,7 @@ export default function ServicesGrid() {
                 key={service.id}
                 className="group relative p-8 rounded-2xl bg-background border border-border hover:border-border transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.15)] flex flex-col h-full"
               >
-                <div className="w-14 h-14 rounded-xl bg-foreground/5 flex items-center justify-center mb-8 group-hover:bg-[#6366F1]/10 transition-colors border border-border">
+                <div className="w-14 h-14 rounded-xl bg-foreground/5 flex items-center justify-center mb-8 group-hover:bg-primary/10 transition-colors border border-border">
                   <IconComponent className="w-7 h-7 text-[#6366F1] group-hover:text-[#22D3EE] transition-colors" />
                 </div>
 

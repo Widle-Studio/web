@@ -67,7 +67,7 @@ export default function MultiFileViewerUploaderPage() {
                   href={component.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#6366F1] text-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
                 >
                   <Github size={18} />
                   View on GitHub

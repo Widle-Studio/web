@@ -20,7 +20,7 @@ export default function BlogIndexPage() {
                     key={index}
                     className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       index === 0
-                        ? "bg-[#6366F1] text-foreground"
+                        ? "bg-primary text-primary-foreground"
                         : "bg-card border border-border text-muted-foreground hover:text-foreground hover:border-border"
                     }`}
                   >

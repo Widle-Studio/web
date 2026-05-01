@@ -39,7 +39,7 @@ export default function CaseStudiesPreview() {
                 {/* Abstract graphic */}
                 <div className="w-full h-full bg-card rounded-lg border border-border shadow-2xl relative p-4 group-hover:scale-[1.02] transition-transform duration-500">
                    <div className="w-1/3 h-4 bg-foreground/10 rounded-md mb-4" />
-                   <div className="w-full h-24 bg-[#6366F1]/20 rounded-md mb-2" />
+                   <div className="w-full h-24 bg-primary/20 rounded-md mb-2" />
                    <div className="flex gap-2 h-16">
                      <div className="flex-1 bg-foreground/5 rounded-md" />
                      <div className="w-1/3 bg-[#22D3EE]/20 rounded-md" />
@@ -52,7 +52,7 @@ export default function CaseStudiesPreview() {
                   {study.tags.slice(0, 3).map((tool, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-[#6366F1]/10 text-[#6366F1] text-xs font-semibold tracking-wide uppercase rounded-full border border-[#6366F1]/20"
+                      className="px-3 py-1 bg-primary/10 text-[#6366F1] text-xs font-semibold tracking-wide uppercase rounded-full border border-[#6366F1]/20"
                     >
                       {tool}
                     </span>

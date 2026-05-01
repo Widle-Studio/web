@@ -44,7 +44,7 @@ export default function UseCasesPage() {
                 onClick={() => setActiveFilter(filter)}
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeFilter === filter
-                    ? "bg-[#6366F1] text-foreground shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
+                    ? "bg-primary text-primary-foreground shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
                     : "bg-foreground/5 text-muted-foreground hover:bg-foreground/10 hover:text-foreground border border-border"
                 }`}
               >
@@ -72,7 +72,7 @@ export default function UseCasesPage() {
                     {/* Mockup */}
                     <div className="w-full h-full bg-card rounded-lg border border-border shadow-2xl relative p-4 group-hover:scale-[1.02] transition-transform duration-500">
                       <div className="w-1/3 h-4 bg-foreground/10 rounded-md mb-4" />
-                      <div className="w-full h-24 bg-[#6366F1]/20 rounded-md mb-2" />
+                      <div className="w-full h-24 bg-primary/20 rounded-md mb-2" />
                       <div className="flex gap-2 h-16">
                         <div className="flex-1 bg-foreground/5 rounded-md" />
                         <div className="w-1/3 bg-[#22D3EE]/20 rounded-md" />
@@ -130,7 +130,7 @@ export default function UseCasesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[#6366F1] text-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
           >
             Schedule a Call
             <ArrowRight size={18} />

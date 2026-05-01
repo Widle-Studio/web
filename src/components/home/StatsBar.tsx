@@ -18,7 +18,7 @@ export default function StatsBar() {
   });
 
   return (
-    <section className="py-24 bg-[#6366F1] relative overflow-hidden" ref={ref}>
+    <section className="py-24 bg-primary relative overflow-hidden" ref={ref}>
       <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1] to-[#8B5CF6] z-0" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('https://retool.com/static/assets/mesh.png')] opacity-10 mix-blend-overlay z-0" />
 

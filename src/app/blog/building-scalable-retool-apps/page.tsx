@@ -59,10 +59,10 @@ export default function BlogPostPage() {
 
              <div className="flex items-center gap-2">
                 <span className="text-sm text-muted-foreground mr-2">Share:</span>
-                <button className="w-10 h-10 rounded-full bg-foreground/5 border border-border flex items-center justify-center text-foreground hover:bg-[#6366F1] hover:border-[#6366F1] transition-all">
+                <button className="w-10 h-10 rounded-full bg-foreground/5 border border-border flex items-center justify-center text-primary-foreground hover:bg-primary hover:border-[#6366F1] transition-all">
                   <Twitter size={18} />
                 </button>
-                <button className="w-10 h-10 rounded-full bg-foreground/5 border border-border flex items-center justify-center text-foreground hover:bg-[#6366F1] hover:border-[#6366F1] transition-all">
+                <button className="w-10 h-10 rounded-full bg-foreground/5 border border-border flex items-center justify-center text-primary-foreground hover:bg-primary hover:border-[#6366F1] transition-all">
                   <Linkedin size={18} />
                 </button>
                 <button className="w-10 h-10 rounded-full bg-foreground/5 border border-border flex items-center justify-center text-foreground hover:bg-foreground/20 transition-all">

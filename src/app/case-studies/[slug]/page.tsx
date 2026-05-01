@@ -113,7 +113,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
               <div className="mb-16">
                 <h2 className="text-3xl font-bold text-foreground mb-6">The Challenge</h2>
-                <div className="p-6 bg-[#6366F1]/5 border-l-4 border-[#6366F1] rounded-r-xl">
+                <div className="p-6 bg-primary/5 border-l-4 border-[#6366F1] rounded-r-xl">
                   <p className="text-foreground/90 leading-relaxed text-xl mb-0">
                     {study.content.problem}
                   </p>
@@ -165,7 +165,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[#6366F1] text-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-[#8B5CF6] transition-colors"
           >
             Book a Free Strategy Call
             <ArrowRight size={18} />

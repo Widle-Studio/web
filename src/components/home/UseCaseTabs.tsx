@@ -29,7 +29,7 @@ export default function UseCaseTabs() {
               onClick={() => setActiveTab(useCase.id)}
               className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap ${
                 activeTab === useCase.id
-                  ? "bg-[#6366F1] text-foreground shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
+                  ? "bg-primary text-primary-foreground shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
                   : "bg-foreground/5 text-muted-foreground hover:bg-foreground/10 hover:text-foreground"
               }`}
             >
@@ -124,7 +124,7 @@ export default function UseCaseTabs() {
                         <div className="w-3/4 h-full flex flex-col gap-4">
                           <div className="flex justify-between items-center">
                             <div className="w-1/3 h-6 bg-foreground/10 rounded-md" />
-                            <div className="w-24 h-8 bg-[#6366F1]/20 rounded-md" />
+                            <div className="w-24 h-8 bg-primary/20 rounded-md" />
                           </div>
 
                           <div className="grid grid-cols-3 gap-3 mb-2">

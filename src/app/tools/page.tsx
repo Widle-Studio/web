@@ -36,7 +36,7 @@ export default function ToolsPage() {
                 <div
                   className="group p-8 rounded-2xl bg-card border border-border hover:border-[#6366F1]/50 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.1)] flex flex-col h-full"
                 >
-                  <div className="w-16 h-16 rounded-xl bg-foreground/5 flex items-center justify-center mb-6 group-hover:bg-[#6366F1]/10 transition-colors border border-border overflow-hidden relative p-3">
+                  <div className="w-16 h-16 rounded-xl bg-foreground/5 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors border border-border overflow-hidden relative p-3">
                     <div className="w-full h-full rounded-md bg-gradient-to-br from-white/20 to-transparent group-hover:from-[#6366F1] group-hover:to-[#22D3EE] transition-all flex items-center justify-center">
                       <Wrench className="w-6 h-6 text-foreground group-hover:text-foreground" />
                     </div>

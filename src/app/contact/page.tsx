@@ -59,7 +59,7 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24 pb-32">
       {/* Hero */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#6366F1] opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1200px] relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight mb-6">
             Let&apos;s discuss your project.
@@ -129,8 +129,8 @@ export default function ContactPage() {
               <div className="bg-card rounded-2xl border border-border p-8 md:p-10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
                 {submitted ? (
                   <div className="text-center py-16">
-                    <div className="w-20 h-20 rounded-full bg-[#6366F1]/20 flex items-center justify-center mx-auto mb-6">
-                      <div className="w-10 h-10 rounded-full bg-[#6366F1] flex items-center justify-center text-foreground">
+                    <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
+                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground">
                         ✓
                       </div>
                     </div>
