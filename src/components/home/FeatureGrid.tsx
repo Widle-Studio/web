@@ -35,16 +35,16 @@ const features = [
 
 export default function FeatureGrid() {
   return (
-    <section className="py-24 md:py-32 bg-[#0D0F14] border-b border-white/[0.06]">
+    <section className="py-24 md:py-32 bg-background border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-16 md:mb-24">
           <span className="text-[#6366F1] font-semibold tracking-wider text-xs uppercase mb-4 block">
             Why Work With Us
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
             Death to boilerplate.
           </h2>
-          <p className="mt-6 text-[#9CA3AF] text-lg max-w-2xl mx-auto">
+          <p className="mt-6 text-muted-foreground text-lg max-w-2xl mx-auto">
             Stop reinventing the wheel. We leverage the best modern platforms to
             build bespoke software faster, cheaper, and better.
           </p>
@@ -55,14 +55,14 @@ export default function FeatureGrid() {
             const Icon = feature.icon;
             return (
               <div key={index} className="flex gap-4">
-                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-white/10 text-[#22D3EE]">
+                <div className="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center shrink-0 border border-border text-[#22D3EE]">
                   <Icon size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">
+                  <h3 className="text-xl font-bold text-foreground mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-[#9CA3AF] leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

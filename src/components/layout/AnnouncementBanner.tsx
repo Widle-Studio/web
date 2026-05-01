@@ -2,7 +2,7 @@ import { Rocket } from "lucide-react";
 
 export default function AnnouncementBanner() {
   return (
-    <div className="bg-primary px-4 py-2.5 sm:px-6 lg:px-8 text-white relative z-50">
+    <div className="bg-primary px-4 py-2.5 sm:px-6 lg:px-8 text-primary-foreground relative z-50">
       <div className="flex items-center justify-center gap-2 text-sm font-medium tracking-wide">
         <Rocket className="w-4 h-4 text-accent" />
         <span className="hidden sm:inline">New: </span>

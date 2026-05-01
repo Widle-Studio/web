@@ -32,11 +32,11 @@ export default function StatsBar() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2 tracking-tight flex items-baseline justify-center">
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-2 tracking-tight flex items-baseline justify-center">
                 <AnimatedCounter from={0} to={stat.value} inView={inView} />
                 <span>{stat.suffix}</span>
               </div>
-              <p className="text-white/80 font-medium text-sm sm:text-base uppercase tracking-wider">
+              <p className="text-foreground/80 font-medium text-sm sm:text-base uppercase tracking-wider">
                 {stat.label}
               </p>
             </motion.div>

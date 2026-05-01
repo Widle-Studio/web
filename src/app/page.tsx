@@ -10,7 +10,7 @@ import CtaSection from "@/components/home/CtaSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0D0F14]">
+    <div className="flex flex-col min-h-screen bg-background">
       <Hero />
       <LogoTicker />
       <UseCaseTabs />
