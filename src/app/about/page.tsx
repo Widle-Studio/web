@@ -13,7 +13,7 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden border-b border-border">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] text-center relative z-10">
           <span className="text-[#6366F1] font-semibold tracking-wider text-xs uppercase mb-6 block">
             Our Mission
@@ -49,7 +49,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="p-8 rounded-2xl bg-background border border-border hover:border-border transition-colors">
-              <Workflow className="w-10 h-10 text-[#22D3EE] mb-6" />
+              <Workflow className="w-10 h-10 text-accent mb-6" />
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Ship Fast, Iterate Later
               </h3>
@@ -78,7 +78,7 @@ export default function AboutPage() {
       <section className="py-32">
         <div className="container mx-auto px-4 max-w-[1000px]">
           <div className="text-center mb-16">
-            <span className="text-[#22D3EE] font-semibold tracking-wider text-xs uppercase mb-4 block">
+            <span className="text-accent font-semibold tracking-wider text-xs uppercase mb-4 block">
               How We Work
             </span>
             <h2 className="text-3xl font-bold text-foreground">Our Process</h2>

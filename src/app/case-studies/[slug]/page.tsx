@@ -27,7 +27,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
     <div className="flex flex-col min-h-screen bg-background pt-24 pb-32">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden border-b border-border bg-card">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] relative z-10 text-center">
           <Link
             href="/case-studies"
@@ -128,7 +128,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
                 {/* Abstract Image Rep */}
                 <div className="w-full aspect-video rounded-xl bg-card border border-border mb-8 p-6 flex flex-col items-center justify-center gap-4 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#22D3EE]/5 to-[#6366F1]/5" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-[#6366F1]/5" />
                   <div className="w-3/4 h-8 bg-foreground/5 rounded-md relative z-10" />
                   <div className="w-full h-full flex gap-4 relative z-10 mt-2">
                      <div className="w-1/4 h-full bg-foreground/5 rounded-md" />
@@ -142,7 +142,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">The Results</h2>
-                <div className="p-6 bg-[#22D3EE]/5 border border-[#22D3EE]/20 rounded-xl">
+                <div className="p-6 bg-accent/5 border border-accent/20 rounded-xl">
                   <p className="text-foreground/90 leading-relaxed text-lg mb-0">
                     {study.content.results}
                   </p>

@@ -54,7 +54,7 @@ export default function BlogIndexPage() {
               </div>
               <div className="w-full lg:w-2/5 flex flex-col">
                  <div className="flex items-center gap-3 mb-6 text-sm">
-                    <span className="text-[#22D3EE] font-semibold">{featuredPost.category}</span>
+                    <span className="text-accent font-semibold">{featuredPost.category}</span>
                     <span className="text-foreground/20">•</span>
                     <span className="text-muted-foreground">{featuredPost.date}</span>
                  </div>
@@ -99,7 +99,7 @@ export default function BlogIndexPage() {
                         <span className="text-foreground/20">•</span>
                         <span className="text-muted-foreground">{post.readTime}</span>
                      </div>
-                     <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-[#22D3EE] transition-colors line-clamp-2">
+                     <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors line-clamp-2">
                         {post.title}
                      </h3>
                      <p className="text-muted-foreground leading-relaxed mb-8 flex-1 line-clamp-3">

@@ -55,7 +55,7 @@ export default function FeatureGrid() {
             const Icon = feature.icon;
             return (
               <div key={index} className="flex gap-4">
-                <div className="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center shrink-0 border border-border text-[#22D3EE]">
+                <div className="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center shrink-0 border border-border text-accent">
                   <Icon size={24} />
                 </div>
                 <div>

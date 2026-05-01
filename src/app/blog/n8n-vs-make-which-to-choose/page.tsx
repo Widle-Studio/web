@@ -37,7 +37,7 @@ export default function BlogPostPage() {
           </Link>
 
           <div className="flex items-center gap-3 mb-6 text-sm font-medium">
-             <span className="text-[#22D3EE] uppercase tracking-wider">{post.category}</span>
+             <span className="text-accent uppercase tracking-wider">{post.category}</span>
              <span className="text-foreground/20">•</span>
              <span className="text-muted-foreground">{post.readTime}</span>
           </div>
@@ -48,7 +48,7 @@ export default function BlogPostPage() {
 
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6 border-y border-border">
              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1] to-[#22D3EE] flex items-center justify-center text-lg font-bold text-foreground shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1] to-accent flex items-center justify-center text-lg font-bold text-foreground shadow-lg">
                   {post.authorAvatar}
                 </div>
                 <div>
@@ -119,7 +119,7 @@ export default function BlogPostPage() {
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                      <div className="text-[#6366F1] text-xs font-bold uppercase tracking-wider mb-3">{relatedPost.category}</div>
-                     <h3 className="text-xl font-bold text-foreground group-hover:text-[#22D3EE] transition-colors mb-3 line-clamp-2">{relatedPost.title}</h3>
+                     <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors mb-3 line-clamp-2">{relatedPost.title}</h3>
                      <p className="text-muted-foreground text-sm line-clamp-2">{relatedPost.excerpt}</p>
                   </div>
                  </Link>

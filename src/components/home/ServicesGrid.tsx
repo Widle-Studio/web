@@ -14,7 +14,7 @@ export default function ServicesGrid() {
     <section className="py-24 bg-card border-y border-border">
       <div className="container mx-auto px-4 max-w-[1200px]">
         <div className="text-center mb-16">
-          <span className="text-[#22D3EE] font-semibold tracking-wider text-xs uppercase mb-4 block">
+          <span className="text-accent font-semibold tracking-wider text-xs uppercase mb-4 block">
             What We Do
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-6">
@@ -38,7 +38,7 @@ export default function ServicesGrid() {
                 className="group relative p-8 rounded-2xl bg-background border border-border hover:border-border transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.15)] flex flex-col h-full"
               >
                 <div className="w-14 h-14 rounded-xl bg-foreground/5 flex items-center justify-center mb-8 group-hover:bg-primary/10 transition-colors border border-border">
-                  <IconComponent className="w-7 h-7 text-[#6366F1] group-hover:text-[#22D3EE] transition-colors" />
+                  <IconComponent className="w-7 h-7 text-[#6366F1] group-hover:text-accent transition-colors" />
                 </div>
 
                 <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -68,7 +68,7 @@ export default function ServicesGrid() {
 
                   <Link
                     href={`/services/${service.id}`}
-                    className="inline-flex items-center gap-2 text-foreground font-medium group-hover:text-[#22D3EE] transition-colors"
+                    className="inline-flex items-center gap-2 text-foreground font-medium group-hover:text-accent transition-colors"
                   >
                     Learn more
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

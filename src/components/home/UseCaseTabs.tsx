@@ -66,7 +66,7 @@ export default function UseCaseTabs() {
                     <ul className="space-y-4">
                       {useCase.points.map((example, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-6 h-6 text-[#22D3EE] shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                           <span className="text-foreground/90 font-medium">
                             {example}
                           </span>
@@ -101,7 +101,7 @@ export default function UseCaseTabs() {
 
                   {/* Right Content - Mockup Illustration */}
                   <div className="relative rounded-xl bg-background border border-border overflow-hidden flex items-center justify-center min-h-[300px] lg:min-h-full">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/10 to-accent/10 pointer-events-none" />
 
                     {/* Abstract UI representation */}
                     <div className="w-[80%] h-[80%] flex flex-col gap-4 p-6 bg-card rounded-lg border border-border shadow-2xl relative z-10">

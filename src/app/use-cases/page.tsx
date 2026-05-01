@@ -20,7 +20,7 @@ export default function UseCasesPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden border-b border-border">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight mb-6">
             Solutions for every team.
@@ -67,7 +67,7 @@ export default function UseCasesPage() {
                   className="bg-card rounded-2xl border border-border overflow-hidden flex flex-col group hover:border-border transition-all hover:shadow-[0_8px_32px_rgba(34,211,238,0.1)]"
                 >
                   <div className="aspect-video bg-background relative border-b border-border flex items-center justify-center p-8">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     {/* Mockup */}
                     <div className="w-full h-full bg-card rounded-lg border border-border shadow-2xl relative p-4 group-hover:scale-[1.02] transition-transform duration-500">
@@ -75,7 +75,7 @@ export default function UseCasesPage() {
                       <div className="w-full h-24 bg-primary/20 rounded-md mb-2" />
                       <div className="flex gap-2 h-16">
                         <div className="flex-1 bg-foreground/5 rounded-md" />
-                        <div className="w-1/3 bg-[#22D3EE]/20 rounded-md" />
+                        <div className="w-1/3 bg-accent/20 rounded-md" />
                       </div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default function UseCasesPage() {
                     <ul className="space-y-3 mt-auto pt-6 border-t border-border">
                       {useCase.points.map((point, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-[#22D3EE] shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                           <span className="text-foreground/80 text-sm">
                             {point}
                           </span>

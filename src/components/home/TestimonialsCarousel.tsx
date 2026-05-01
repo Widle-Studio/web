@@ -39,13 +39,13 @@ export default function TestimonialsCarousel() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="absolute w-full px-4 sm:px-12 flex flex-col items-center"
             >
-              <Quote className="w-12 h-12 text-[#22D3EE]/20 mb-8 mx-auto" />
+              <Quote className="w-12 h-12 text-accent/20 mb-8 mx-auto" />
               <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground leading-tight mb-12 tracking-tight">
                 "{testimonials[index].quote}"
               </p>
 
               <div className="flex items-center gap-4 text-left bg-foreground/5 pr-6 pl-2 py-2 rounded-full border border-border">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1] to-[#22D3EE] shrink-0 flex items-center justify-center text-foreground font-bold text-lg">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1] to-accent shrink-0 flex items-center justify-center text-foreground font-bold text-lg">
                   {testimonials[index].author.name[0]}
                 </div>
                 <div>
@@ -77,7 +77,7 @@ export default function TestimonialsCarousel() {
                 key={i}
                 onClick={() => setIndex(i)}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  i === index ? "w-8 bg-[#22D3EE]" : "bg-foreground/20 hover:bg-white/40"
+                  i === index ? "w-8 bg-accent" : "bg-foreground/20 hover:bg-white/40"
                 }`}
                 aria-label={`Go to testimonial ${i + 1}`}
               />

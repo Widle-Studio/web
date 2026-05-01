@@ -11,7 +11,7 @@ export default function CaseStudiesPreview() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div>
-            <span className="text-[#22D3EE] font-semibold tracking-wider text-xs uppercase mb-4 block">
+            <span className="text-accent font-semibold tracking-wider text-xs uppercase mb-4 block">
               Case Studies
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -35,14 +35,14 @@ export default function CaseStudiesPreview() {
               className="group flex flex-col bg-background border border-border rounded-2xl overflow-hidden hover:border-border transition-all duration-300 hover:shadow-[0_8px_32px_rgba(34,211,238,0.1)] h-full"
             >
               {/* Thumbnail Placeholder */}
-              <div className="w-full aspect-[4/3] bg-gradient-to-br from-[#13161D] to-[#22D3EE]/10 relative border-b border-border overflow-hidden flex items-center justify-center p-8">
+              <div className="w-full aspect-[4/3] bg-gradient-to-br from-[#13161D] to-accent/10 relative border-b border-border overflow-hidden flex items-center justify-center p-8">
                 {/* Abstract graphic */}
                 <div className="w-full h-full bg-card rounded-lg border border-border shadow-2xl relative p-4 group-hover:scale-[1.02] transition-transform duration-500">
                    <div className="w-1/3 h-4 bg-foreground/10 rounded-md mb-4" />
                    <div className="w-full h-24 bg-primary/20 rounded-md mb-2" />
                    <div className="flex gap-2 h-16">
                      <div className="flex-1 bg-foreground/5 rounded-md" />
-                     <div className="w-1/3 bg-[#22D3EE]/20 rounded-md" />
+                     <div className="w-1/3 bg-accent/20 rounded-md" />
                    </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function CaseStudiesPreview() {
                   ))}
                 </div>
 
-                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-[#22D3EE] transition-colors">
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors">
                   {study.title}
                 </h3>
 

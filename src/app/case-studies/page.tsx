@@ -12,9 +12,9 @@ export default function CaseStudiesPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden border-b border-border">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] text-center relative z-10">
-          <span className="text-[#22D3EE] font-semibold tracking-wider text-xs uppercase mb-6 block">
+          <span className="text-accent font-semibold tracking-wider text-xs uppercase mb-6 block">
             Our Work
           </span>
           <h1 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight mb-6">
@@ -38,14 +38,14 @@ export default function CaseStudiesPage() {
                 className="group flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover:border-[#6366F1]/50 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.15)] h-full"
               >
                 {/* Thumbnail */}
-                <div className="w-full aspect-[4/3] bg-gradient-to-br from-background to-[#22D3EE]/10 relative border-b border-border overflow-hidden flex items-center justify-center p-8">
+                <div className="w-full aspect-[4/3] bg-gradient-to-br from-background to-accent/10 relative border-b border-border overflow-hidden flex items-center justify-center p-8">
                   {/* Abstract graphic */}
                   <div className="w-full h-full bg-card rounded-lg border border-border shadow-2xl relative p-4 group-hover:scale-[1.05] transition-transform duration-500">
                      <div className="w-1/3 h-4 bg-foreground/10 rounded-md mb-4" />
                      <div className="w-full h-24 bg-primary/20 rounded-md mb-2" />
                      <div className="flex gap-2 h-16">
                        <div className="flex-1 bg-foreground/5 rounded-md" />
-                       <div className="w-1/3 bg-[#22D3EE]/20 rounded-md" />
+                       <div className="w-1/3 bg-accent/20 rounded-md" />
                      </div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default function CaseStudiesPage() {
                     ))}
                   </div>
 
-                  <div className="mt-8 flex items-center text-[#22D3EE] font-medium text-sm group-hover:text-foreground transition-colors">
+                  <div className="mt-8 flex items-center text-accent font-medium text-sm group-hover:text-foreground transition-colors">
                     Read full case study
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>

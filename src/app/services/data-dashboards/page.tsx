@@ -24,7 +24,7 @@ export default function DataDashboardsPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden border-b border-border">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] relative z-10">
           <Link
             href="/services"
@@ -65,7 +65,7 @@ export default function DataDashboardsPage() {
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-                 <Settings className="w-8 h-8 text-[#22D3EE]" /> How it Helps
+                 <Settings className="w-8 h-8 text-accent" /> How it Helps
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 {service.howItHelps}
@@ -103,10 +103,10 @@ export default function DataDashboardsPage() {
       {service.industryCaseStudy && (
         <section className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-4 max-w-[1000px]">
-                <div className="bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 border border-border rounded-3xl p-10 md:p-16 relative">
+                <div className="bg-gradient-to-br from-[#6366F1]/10 to-accent/10 border border-border rounded-3xl p-10 md:p-16 relative">
                     <div className="flex items-center gap-3 mb-6">
-                        <Factory className="w-6 h-6 text-[#22D3EE]" />
-                        <span className="text-[#22D3EE] font-semibold tracking-wider text-sm uppercase">
+                        <Factory className="w-6 h-6 text-accent" />
+                        <span className="text-accent font-semibold tracking-wider text-sm uppercase">
                             Industry Case Study: {service.industryCaseStudy.industry}
                         </span>
                     </div>
