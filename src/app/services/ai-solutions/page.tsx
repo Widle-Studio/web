@@ -149,7 +149,7 @@ export default function AiSolutionsPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity"
           >
             Get a Free Consultation
             <ArrowRight size={18} />

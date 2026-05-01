@@ -74,7 +74,7 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
           >
             Book a Consultation
             <ArrowRight size={18} />

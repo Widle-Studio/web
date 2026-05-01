@@ -149,7 +149,7 @@ export default function AboutPage() {
           <div className="mt-12">
              <Link
                 href="/tools"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors"
+                className="inline-flex items-center gap-2 text-primary font-medium hover:text-[#8B5CF6] transition-colors"
               >
                 View all integrations
                 <ArrowRight size={18} />
@@ -166,7 +166,7 @@ export default function AboutPage() {
           </h2>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity mt-6 shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity mt-6 shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
           >
             Get in touch
             <ArrowRight size={18} />

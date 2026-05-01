@@ -134,7 +134,7 @@ export default function BlogIndexPage() {
             />
             <button
               type="submit"
-              className="px-8 py-3 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity whitespace-nowrap"
+              className="px-8 py-3 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity whitespace-nowrap"
             >
               Subscribe
             </button>

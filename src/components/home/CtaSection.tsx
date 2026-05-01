@@ -22,7 +22,7 @@ export default function CtaSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/contact"
-            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
+            className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
           >
             Book a Free Consultation
             <ArrowRight size={18} />

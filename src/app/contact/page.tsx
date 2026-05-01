@@ -96,7 +96,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-foreground font-medium mb-1">Email Us</h3>
-                    <p className="text-muted-foreground">hello@widle.agency</p>
+                    <p className="text-muted-foreground">hello@autotech.agency</p>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-foreground font-medium mb-1">Support</h3>
-                    <p className="text-muted-foreground">support@widle.agency</p>
+                    <p className="text-muted-foreground">support@autotech.agency</p>
                   </div>
                 </div>
 
@@ -143,7 +143,7 @@ export default function ContactPage() {
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="text-primary hover:text-primary/80 transition-colors font-medium"
+                      className="text-primary hover:text-[#8B5CF6] transition-colors font-medium"
                     >
                       Send another message
                     </button>
@@ -273,7 +273,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full py-4 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? (
                         <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

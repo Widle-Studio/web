@@ -152,7 +152,7 @@ export default function Navbar() {
           <ThemeToggle />
           <Link
             href="/contact"
-            className="rounded-lg bg-gradient-to-r from-primary to-primary-foreground px-5 py-2.5 text-sm font-semibold text-foreground shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             Book a Call
           </Link>
@@ -230,8 +230,7 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </div>
-                <div className="py-6 flex flex-col gap-4">
-                  <div className="flex justify-end"><ThemeToggle /></div>
+                <div className="py-6">
                   <Link
                     href="/contact"
                     className="-mx-3 block rounded-lg bg-primary px-3 py-2.5 text-base font-semibold leading-7 text-foreground hover:bg-primary/90 text-center"

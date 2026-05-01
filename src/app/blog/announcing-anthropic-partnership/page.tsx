@@ -30,7 +30,7 @@ export default function BlogPostPage() {
         <div className="container mx-auto px-4 max-w-[800px] relative z-10">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-primary font-medium hover:text-primary/80 transition-colors mb-10"
+            className="inline-flex items-center gap-2 text-sm text-primary font-medium hover:text-[#8B5CF6] transition-colors mb-10"
           >
             <ArrowLeft size={16} />
             Back to all articles
@@ -85,7 +85,7 @@ export default function BlogPostPage() {
       {/* Article Content */}
       <section className="pb-24">
         <div className="container mx-auto px-4 max-w-[800px]">
-           <div className="prose prose-invert prose-lg md:prose-xl max-w-none prose-headings:text-foreground prose-headings:font-bold prose-h2:mt-12 prose-h2:mb-6 prose-p:text-muted-foreground prose-p:leading-relaxed prose-a:text-primary hover:prose-a:text-primary/80 prose-li:text-muted-foreground prose-strong:text-foreground prose-img:rounded-xl prose-hr:border-border/50">
+           <div className="prose prose-invert prose-lg md:prose-xl max-w-none prose-headings:text-foreground prose-headings:font-bold prose-h2:mt-12 prose-h2:mb-6 prose-p:text-muted-foreground prose-p:leading-relaxed prose-a:text-primary hover:prose-a:text-[#8B5CF6] prose-li:text-muted-foreground prose-strong:text-foreground prose-img:rounded-xl prose-hr:border-border/50">
               <p className="text-xl md:text-2xl text-foreground font-medium leading-relaxed mb-10 border-l-4 border-primary pl-6">
                 {post.excerpt}
               </p>

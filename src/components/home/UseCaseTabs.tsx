@@ -92,7 +92,7 @@ export default function UseCaseTabs() {
 
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors group mt-4 w-fit"
+                      className="inline-flex items-center gap-2 text-primary font-medium hover:text-[#8B5CF6] transition-colors group mt-4 w-fit"
                     >
                       Talk to us about your team
                       <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

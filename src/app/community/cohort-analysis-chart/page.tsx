@@ -84,7 +84,7 @@ export default function CohortAnalysisChartPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-16">
 
             {/* Guide / Markdown Body */}
-            <div className="order-2 lg:order-1 prose prose-invert prose-lg max-w-none prose-headings:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-img:rounded-xl prose-img:border prose-img:border-border/50 prose-hr:border-border/50 prose-blockquote:border-primary">
+            <div className="order-2 lg:order-1 prose prose-invert prose-lg max-w-none prose-headings:text-foreground prose-a:text-primary hover:prose-a:text-[#8B5CF6] prose-img:rounded-xl prose-img:border prose-img:border-border/50 prose-hr:border-border/50 prose-blockquote:border-primary">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {cleanBody(component.githubBody, component.imageUrl)}
               </ReactMarkdown>
@@ -108,7 +108,7 @@ export default function CohortAnalysisChartPage() {
                    </div>
                    <h3 className="text-foreground font-medium mb-2">View Component</h3>
                    <p className="text-sm text-muted-foreground mb-4">Check out the PR on GitHub to see the full implementation and previews.</p>
-                   <a href={component.url} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:text-primary/80 transition-colors">
+                   <a href={component.url} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:text-[#8B5CF6] transition-colors">
                      Open GitHub &rarr;
                    </a>
                 </div>

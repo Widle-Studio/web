@@ -99,7 +99,7 @@ export default function CommunityPage() {
                       ))}
                     </div>
 
-                    <div className="flex items-center text-primary text-sm font-semibold group-hover:text-primary/80 transition-colors">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:text-[#8B5CF6] transition-colors">
                         View Details <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -121,7 +121,7 @@ export default function CommunityPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-primary-foreground text-foreground font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] text-white font-medium hover:opacity-90 transition-opacity"
           >
             Hire us to build it
             <ArrowRight size={18} />

@@ -1,22 +1,8 @@
 import Link from "next/link";
 import { Linkedin, Twitter, Github } from "lucide-react";
+import { serviceCategories } from "@/lib/data/services-menu";
 
 const navigation = {
-  services: [
-    { name: "Internal Tools", href: "/services/internal-tools" },
-    { name: "Workflow Automation", href: "/services/automation" },
-    { name: "AI Solutions", href: "/services/ai-solutions" },
-    { name: "Data Dashboards", href: "/services/data-dashboards" },
-  ],
-  tools: [
-    { name: "Retool", href: "/tools/retool" },
-    { name: "n8n", href: "/tools/n8n" },
-    { name: "Make.com", href: "/tools/make" },
-    { name: "Zapier", href: "/tools/zapier" },
-    { name: "Looker Studio", href: "/tools/looker-studio" },
-    { name: "OpenAI", href: "/tools/openai" },
-    { name: "Anthropic", href: "/tools/anthropic" },
-  ],
   company: [
     { name: "About Us", href: "/about" },
     { name: "Case Studies", href: "/case-studies" },
@@ -65,9 +51,9 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-foreground">Services</h3>
+                <h3 className="text-sm font-semibold leading-6 text-foreground">{serviceCategories[0].title}</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.services.map((item) => (
+                  {serviceCategories[0].items.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
                         {item.name}
@@ -77,9 +63,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-foreground">Tools We Love</h3>
+                <h3 className="text-sm font-semibold leading-6 text-foreground">{serviceCategories[1].title}</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.tools.map((item) => (
+                  {serviceCategories[1].items.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
                         {item.name}
@@ -91,6 +77,18 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
+                <h3 className="text-sm font-semibold leading-6 text-foreground">{serviceCategories[2].title}</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {serviceCategories[2].items.map((item) => (
+                    <li key={item.name}>
+                      <Link href={item.href} className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Company</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
