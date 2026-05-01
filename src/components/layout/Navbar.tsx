@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { serviceCategories } from "@/lib/data/services-menu";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 const navLinks = [
   { name: "Use Cases", href: "/use-cases" },
@@ -147,7 +148,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
+          <ThemeToggle />
           <Link
             href="/contact"
             className="rounded-lg bg-gradient-to-r from-primary to-[#8B5CF6] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
@@ -169,14 +171,17 @@ export default function Navbar() {
                 </div>
                 <span className="text-xl font-bold text-white">Widle</span>
               </Link>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-muted-foreground hover:text-white"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <X className="h-6 w-6" aria-hidden="true" />
-              </button>
+              <div className="flex items-center gap-4">
+                <ThemeToggle />
+                <button
+                  type="button"
+                  className="-m-2.5 rounded-md p-2.5 text-muted-foreground hover:text-white"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="sr-only">Close menu</span>
+                  <X className="h-6 w-6" aria-hidden="true" />
+                </button>
+              </div>
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-white/10">
