@@ -6,7 +6,7 @@ export default function CtaSection() {
     <section className="py-32 relative bg-background overflow-hidden">
       {/* Abstract Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/20 to-[#22D3EE]/20 blur-[120px] rounded-full pointer-events-none opacity-50" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/20 to-accent/20 blur-[120px] rounded-full pointer-events-none opacity-50" />
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('https://retool.com/static/assets/mesh.png')] opacity-5 mix-blend-overlay pointer-events-none" />
       </div>
 

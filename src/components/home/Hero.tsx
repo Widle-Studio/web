@@ -25,8 +25,8 @@ export default function Hero() {
   return (
     <section className="relative w-full pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
       {/* Background glow effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#6366F1] opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 translate-x-1/4 -translate-y-1/4 w-[400px] h-[400px] bg-[#22D3EE] opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 translate-x-1/4 -translate-y-1/4 w-[400px] h-[400px] bg-accent opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] relative z-10 text-center">
         <motion.div

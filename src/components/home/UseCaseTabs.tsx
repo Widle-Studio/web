@@ -29,7 +29,7 @@ export default function UseCaseTabs() {
               onClick={() => setActiveTab(useCase.id)}
               className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap ${
                 activeTab === useCase.id
-                  ? "bg-[#6366F1] text-foreground shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
+                  ? "bg-primary text-primary-foreground shadow-[0_4px_20px_rgba(99,102,241,0.25)]"
                   : "bg-foreground/5 text-muted-foreground hover:bg-foreground/10 hover:text-foreground"
               }`}
             >
@@ -66,7 +66,7 @@ export default function UseCaseTabs() {
                     <ul className="space-y-4">
                       {useCase.points.map((example, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-6 h-6 text-[#22D3EE] shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                           <span className="text-foreground/90 font-medium">
                             {example}
                           </span>
@@ -101,7 +101,7 @@ export default function UseCaseTabs() {
 
                   {/* Right Content - Mockup Illustration */}
                   <div className="relative rounded-xl bg-background border border-border overflow-hidden flex items-center justify-center min-h-[300px] lg:min-h-full">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/10 to-accent/10 pointer-events-none" />
 
                     {/* Abstract UI representation */}
                     <div className="w-[80%] h-[80%] flex flex-col gap-4 p-6 bg-card rounded-lg border border-border shadow-2xl relative z-10">
@@ -124,7 +124,7 @@ export default function UseCaseTabs() {
                         <div className="w-3/4 h-full flex flex-col gap-4">
                           <div className="flex justify-between items-center">
                             <div className="w-1/3 h-6 bg-foreground/10 rounded-md" />
-                            <div className="w-24 h-8 bg-[#6366F1]/20 rounded-md" />
+                            <div className="w-24 h-8 bg-primary/20 rounded-md" />
                           </div>
 
                           <div className="grid grid-cols-3 gap-3 mb-2">

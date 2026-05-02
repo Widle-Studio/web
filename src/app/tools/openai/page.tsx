@@ -24,7 +24,7 @@ export default function OpenaiPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden border-b border-border">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] relative z-10">
           <Link
             href="/tools"
@@ -58,7 +58,7 @@ export default function OpenaiPage() {
               <ul className="space-y-4">
                 {tool.useCases.map((useCase, index) => (
                   <li key={index} className="flex items-center gap-3 text-muted-foreground">
-                    <div className="w-2 h-2 rounded-full bg-[#22D3EE]" />
+                    <div className="w-2 h-2 rounded-full bg-accent" />
                     <span className="text-lg">{useCase}</span>
                   </li>
                 ))}

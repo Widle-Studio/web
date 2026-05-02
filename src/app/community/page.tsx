@@ -25,7 +25,7 @@ export default function CommunityPage() {
     <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero */}
       <section className="py-20 md:py-32 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-[#22D3EE]/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#6366F1]/10 to-accent/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 max-w-[1000px] text-center relative z-10">
           <span className="text-[#6366F1] font-semibold tracking-wider text-xs uppercase mb-6 block">
             Open Source
@@ -55,7 +55,7 @@ export default function CommunityPage() {
         <div className="container mx-auto px-4 max-w-[1200px]">
           <div className="mb-12 flex items-center justify-between border-b border-border pb-6">
              <h2 className="text-3xl font-bold text-foreground flex items-center gap-3">
-                 <Github className="w-8 h-8 text-[#22D3EE]" /> Retool Contributions
+                 <Github className="w-8 h-8 text-accent" /> Retool Contributions
              </h2>
              <span className="text-muted-foreground bg-foreground/5 px-3 py-1 rounded-full text-sm border border-border">
                 {contributions.length} Components
@@ -71,14 +71,14 @@ export default function CommunityPage() {
                   key={item.id}
                   className="group p-8 rounded-2xl bg-card border border-border hover:border-[#6366F1]/50 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(99,102,241,0.1)] flex flex-col h-full"
                 >
-                  <div className="w-16 h-16 rounded-xl bg-foreground/5 flex items-center justify-center mb-6 group-hover:bg-[#6366F1]/10 transition-colors border border-border overflow-hidden relative p-3">
-                    <div className="w-full h-full rounded-md bg-gradient-to-br from-white/20 to-transparent group-hover:from-[#6366F1] group-hover:to-[#22D3EE] transition-all flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-xl bg-foreground/5 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors border border-border overflow-hidden relative p-3">
+                    <div className="w-full h-full rounded-md bg-gradient-to-br from-white/20 to-transparent group-hover:from-[#6366F1] group-hover:to-accent transition-all flex items-center justify-center">
                       <Icon className="w-6 h-6 text-foreground group-hover:text-foreground" />
                     </div>
                   </div>
 
                   <div className="mb-4 flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-[#22D3EE] transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors line-clamp-2">
                       {item.title}
                     </h3>
                   </div>

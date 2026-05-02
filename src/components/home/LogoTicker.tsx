@@ -25,7 +25,7 @@ export default function LogoTicker() {
             >
               <div className="w-10 h-10 relative flex items-center justify-center bg-foreground/5 rounded-md p-2 border border-border">
                 {/* Fallback avatar block for tool logo representation since we don't have images */}
-                <div className="w-6 h-6 rounded-sm bg-gradient-to-br from-[#6366F1] to-[#22D3EE] opacity-50"></div>
+                <div className="w-6 h-6 rounded-sm bg-gradient-to-br from-[#6366F1] to-accent opacity-50"></div>
               </div>
               <span className="text-foreground/80 font-medium text-lg">
                 {tool.name}
